@@ -1,0 +1,116 @@
+body{
+    overflow: hidden;
+    background: url(../img/achtergrond_donker.jpg);
+    background-repeat: no-repeat;
+    background-size:100% 100%;
+}
+
+#spelbox{
+    margin:2vh;
+}
+
+#bord{
+    height: 100vh;
+}
+
+#bordBeurt{
+    /* border-radius: 1vh; */
+    /* box-shadow: 0 4px 12px 0px rgba(0, 0, 0, 0.25); */
+    height: 90vh;
+    background: url(../img/achtergrond_donkerder.png);
+    background-repeat: no-repeat;
+    background-size:100% 100%;
+    font-family: 'Poor Story', cursive;
+}
+
+#background-winnaar{
+    margin-top: 10vh;
+    background: url(../img/winnaar_background.png);
+    background-size:100% 100%;
+}
+
+canvas{
+    margin: auto;
+    display: inherit;
+    border-radius: 1vh;
+    box-shadow: 0 4px 12px 0px rgba(0, 0, 0, 0.25);
+}
+
+#splashscreen{
+    background: url(../img/achtergrond.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+}
+
+#spelInfo{
+    background: rgba(255, 255, 255, 0.5);
+    min-height: 90vh;
+    max-height: 90vh;
+}
+
+.title{
+    font-family: 'IM Fell English SC', serif;
+    font-size: 5em;
+    margin-bottom: -30px;
+}
+
+.subTitle{
+    margin-top: -10px;
+    font-family: 'Poor Story', cursive;
+}
+
+#spelerKeuze{
+    min-height: 48vh;
+}
+
+.character{
+    cursor: pointer;
+    height: auto
+}
+
+hr.dash {
+	border-top: 4px dashed #393d45;
+}
+
+.paper-3 {
+    background: #fff;
+    box-shadow:
+      /* The top layer shadow */
+      0 -1px 1px rgba(0,0,0,0.15),
+      /* The second layer */
+      0 -10px 0 -5px #eee,
+      /* The second layer shadow */
+      0 -10px 1px -4px rgba(0,0,0,0.15),
+       /* The third layer */
+      0 -20px 0 -10px #eee,
+      /* The third layer shadow */
+      0 -20px 1px -9px rgba(0,0,0,0.15);
+      /* Padding for demo purposes */
+      padding: 10px 30px;
+      max-height: 30vh;
+}
+
+.paper-2 {
+    background: #fff;
+    box-shadow:
+      /* The top layer shadow */
+      0 -1px 1px rgba(0,0,0,0.15),
+      /* The second layer */
+      0 -10px 0 -5px #eee,
+      /* The second layer shadow */
+      0 -10px 1px -4px rgba(0,0,0,0.15);
+      /* Padding for demo purposes */
+      padding: 10px 30px;
+      max-height: 30vh;
+}
+
+.paper-1 {
+    background: #fff;
+    box-shadow:
+      /* The top layer shadow */
+      0 5px 5px rgba(0,0,0,0.15);
+      padding: 10px 30px;
+      max-height: 30vh;
+}

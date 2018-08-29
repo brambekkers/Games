@@ -1,0 +1,35 @@
+/*font-family: 'Raleway', sans-serif;
+font-family: 'Libre Baskerville', serif;*/
+table {
+	margin: 0 auto;
+}
+
+td {
+	padding: 50px;
+}
+
+
+.middely {
+	border-left: #222222 solid 1px;
+	border-right: #222222 solid 1px;
+}
+
+.middelx {
+	border-top: #222222 solid 1px;
+	border-bottom: #222222 solid 1px;
+}
+
+.middelz {
+	border: #222222 solid 1px;
+}
+
+
+body {
+	font-family: 'Raleway', serif;
+}
+
+h1 {
+	font-family: 'Libre Baskerville', serif;
+	margin: 50px auto;
+	text-align: center;
+}

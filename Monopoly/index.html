@@ -1,0 +1,246 @@
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+    <div id="gamebuttons">
+        <div class='btn btn-info gameknoppen' id='sound-button'>
+            <i class="fa fa-volume-up fa-2x" aria-hidden="true"></i>
+        </div>
+        <div class='btn btn-info gameknoppen' id='newgame-button'>
+            <i class="fa fa-undo fa-2x" aria-hidden="true"></i>
+        </div>
+        <div class='btn btn-info gameknoppen' id='fullscreen-button'>
+            <i class="fa fa-expand fa-2x" id="sound-button-icon" aria-hidden="true"></i>
+        </div>
+    </div>
+
+    <div id="spel">
+        <div id="speelbord" class=""> </div>
+
+        <div id="zijbar">
+            <div class="alert alert-danger overzichtspelers" id="overzichtspeler1">
+                <div id="sluitSpeler1" class="sluitSpeler text-right text-nowrap">x</div>
+                <input type="text" id="spelersNaam1" class="spelersNaam" value="Speler 1"></input>
+                <br>
+                <div id="spelersBudget1" class="spelersBudget align-bottom">€ 10000</div>
+            </div>
+            <div class="alert alert-success overzichtspelers" id="overzichtspeler2">
+                <div id="sluitSpeler2" class="sluitSpeler text-right text-nowrap">x</div>
+                <input type="text" id="spelersNaam2" class="spelersNaam" value="Speler 2"></input>
+                <br>
+                <div id="spelersBudget2" class="spelersBudget">€ 10000</div>
+            </div>
+            <div class="alert alert-primary overzichtspelers" id="overzichtspeler3">
+                <div id="sluitSpeler3" class="sluitSpeler text-right text-nowrap">x</div>
+                <input type="text" id="spelersNaam3" class="spelersNaam" value="Speler 3"></input>
+                <br>
+                <div id="spelersBudget3" class="spelersBudget">€ 10000</div>
+            </div>
+            <div class="alert alert-warning overzichtspelers" id="overzichtspeler4">
+                <div id="sluitSpeler4" class="sluitSpeler text-right text-nowrap">x</div>
+                <input type="text" id="spelersNaam4" class="spelersNaam" value="Speler 4"></input>
+                <br>
+                <div id="spelersBudget4" class="spelersBudget">€ 10000</div>
+            </div>
+
+
+
+            <div class="beurtonderdeel">
+                <ul class="list-group">
+                    <li class="list-group-item list-item-header font-weight-bold">STAPPEN:</li>
+                    <li id="stapGooien" class="list-group-item list-group-item-success font-weight-normal">Gooien</li>
+                    <li id="stapKopen" class="list-group-item font-weight-normal">Actie</li>
+                    <li id="stapVersterken" class="list-group-item font-weight-normal">Versterken</li>
+                </ul>
+            </div>
+
+            <h5 id="spelersNaamDetail" class="font-weight-bold">Speler 1</h5>
+            <div id="spelersBudgetDetail">
+                <h5 class="text-left mt-auto font-weight-bold">BUDGET:</h5>
+                <h4 id="spelersBudgetDetailInvullen" class="font-weight-bold">€ 10000</h4>
+            </div>
+
+            <ul id="speeldiv" class="list-group list-group-flush">
+                <li id="spelTitel" class="list-group-item font-weight-bold">GOOIEN</li>
+
+                <!-- Gooi beurt -->
+                <li class="list-group-item list-group-item-success speelveld" id="gooien">
+
+                    <div class="dice-wrapper">
+                        <div class="cubic">
+                            <div class="front"></div>
+                            <div class="right"></div>
+                            <div class="bottom"></div>
+                            <div class="top"></div>
+                            <div class="left"></div>
+                            <div class="back"></div>
+                        </div>
+                        <div id="ctrl">
+                            <button id="roll" class="btn btn-success knoppenGroen">Gooi</button>
+                        </div>
+                        <div class="cubic">
+                            <div class="front"></div>
+                            <div class="right"></div>
+                            <div class="bottom"></div>
+                            <div class="top"></div>
+                            <div class="left"></div>
+                            <div class="back"></div>
+                        </div>
+                    </div>
+
+
+                </li>
+
+                <!-- Kopen / betalen -->
+                <li class="list-group-item list-group-item-warning speelveld" id="kopen">
+
+
+                    <div id="algemeneInfo">
+                        <div id="algemeneInfoText"></div>
+                        <div>
+                            <button id="GevangenisKnop" class="btn btn-danger knoppenRood kopenKnop">Betaal &euro;50 en kom vrij</button>
+                        </div>
+                        <div>
+                            <button id="algemeneInfoKnop" class="btn btn-success knoppenGroen kopenKnop">Verder</button>
+                        </div>
+                    </div>
+
+
+                    <div id="actieKopen" class="actieveld">
+                        <img id="handelImg" src=""></img>
+                    </div>
+
+                    <div id="actieBetalen" class="actieveld">
+                        <h4 class="mb-0 font-weight-bold">Betalen</h4>
+                        <p id="betaalInfo"></p>
+                    </div>
+
+
+                    <!-- rechterzijde -->
+                    <div id="koopknop">
+                        <div id="koopInfo">
+                            <h5 id="koopNaam">Kopen?</h5>
+                            <p id="koopPrijs"></p>
+                        </div>
+
+                        <div>
+                            <button id="kaartKopen" class="btn btn-success knoppenGroen kopenKnop">Kopen</button>
+                        </div>
+                        <div>
+                            <button id="kaartNietKopen" class="btn btn-danger knoppenRood kopenKnop">Niet kopen</button>
+                        </div>
+                    </div>
+
+
+                    <div id="betaalknop">
+                        <div>
+                            <button id="kaartBetalen" class="btn btn-success knoppenGroen kopenKnop">Betalen</button>
+                        </div>
+                    </div>
+
+                </li>
+
+                <!-- Huizen plaatsen/ versterken -->
+                <li class="list-group-item list-group-item-primary speelveld" id="versterken">
+                    <div id="versterkKnoppen">
+                        <button id="huizenKopenKnop" class="btn btn-success knoppenGroen kopenKnop">Huizen kopen</button>
+                        <button id="ruilenMetAnderen" class="btn btn-success knoppenGroen kopenKnop">Ruilen met anderen</button>
+                        <button id="hypotheekBeheren" class="btn btn-success knoppenGroen kopenKnop">Hypotheek beheren</button>
+                        <button id="beurtBeeindigen" class="btn btn-danger knoppenRood kopenKnop">Beurt beëindigen</button>
+                    </div>
+
+
+                    <!-- HUIZEN KOPEN -->
+                    <div id="huizenKopenDiv">
+                        <div id="huizenKopenDiv_links">
+                            <div id="huizenKopenInfo" class="text-center">Klik op een straat om het vastgoed te beheren</div>
+                        </div>
+                        <div id="huizenKopenDiv_rechts">
+                            <div id="huizenKopenSlider" class="range-slider">
+                                <span class="range-slider__value">0</span>
+                                <input class="range-slider__range" type="range" value="0" min="0" max="5">
+                            </div>
+
+                            <button id="huizenDoorvoeren" class="btn btn-success knoppenGroen kopenKnop" disabled="true">Aanpassen</button>
+                            <button class="VersterkenTerug btn btn-danger knoppenRood kopenKnop">Terug</button>
+                        </div>
+                    </div>
+
+                    <!-- RUILEN -->
+                    <div id="vastgoedRuilen" class="text-center">
+                        <div id="ruilHuidigeSpeler">
+                            <h6 id="ruilennaam_1" class="ruilenTitel font-weight-bold">Wat wil je ruilen</h6>
+                            <img id="ruilHuidigeSpeler_plus" class="plus_kaartje" src="img/plus.png"></img>
+
+                            <!-- Geld toeveogen -->
+                            <div class="form-group row">
+                                <div class="ruil_geld_text">
+                                    <strong>E.v.t. extra &euro;</strong>
+                                </div>
+                                <input id="ruil_geld_1" class="form-control ruil_geld" type="number" min="0" value="0" id="example-number-input">
+                            </div>
+                            <!-- Einde geld toeveogen -->
+                        </div>
+
+                        <div id="vastgoedRuilenKnoppen">
+                            <button id="vastgoedRuilenKnop" class="btn btn-success knoppenGroen kopenKnop" disabled="true">Ruilen</button>
+                            <button class="VersterkenTerug btn btn-danger knoppenRood kopenKnop">Terug</button>
+                        </div>
+
+
+                        <div id="ruilAndereSpeler">
+                            <select id="ruilennaam_2" class="custom-select">
+                                <option selected disabled>Kiezen...</option>
+                            </select>
+                            <img id="ruilAndereSpeler_plus" class="plus_kaartje" src="img/plus.png"></img>
+                            <!-- Geld toeveogen -->
+                            <div class="form-group row">
+                                <div class="ruil_geld_text">
+                                    <strong>E.v.t. extra &euro;</strong>
+                                </div>
+                                <input id="ruil_geld_2" class="form-control ruil_geld" type="number" min="0" value="0" id="example-number-input">
+                            </div>
+                            <!-- Einde geld toeveogen -->
+                        </div>
+                        <h6 id="ruilenbericht">Klik op een zijde waar je een ruilkaart zou willen toevoegen</h6>
+                    </div>
+
+                    <!-- HYPOTHEEK BEHEREN -->
+                    <div id="hypotheekDiv">
+                        <div id="hypotheekDiv_links">
+                            <div id="hypotheekInfo" class="text-center">Klik op een straat om de hypotheek te beheren</div>
+                        </div>
+                        <div id="hypotheekDiv_rechts">
+                            <button id="hypotheekDoorvoeren" class="btn btn-success knoppenGroen kopenKnop" disabled="true">Aanpassen</button>
+                            <button class="VersterkenTerug btn btn-danger knoppenRood kopenKnop">Terug</button>
+                        </div>
+                    </div>
+                </li>
+
+            </ul>
+
+            <table id="spelerskaarten">
+                <tr id="spelerskaarten_tr"></tr>
+            </table>
+        </div>
+    </div>
+
+
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/bootbox.min.js"></script>
+
+</body>
+
+</html>

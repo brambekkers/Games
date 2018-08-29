@@ -1,0 +1,123 @@
+body {
+	background-color: #232323;
+	margin: 0;
+}
+
+.square{
+	width: 30%;
+	padding-bottom: 30%;
+	background-color: purple;
+	float: left;
+	margin: 1.66%;
+	border-radius: 30px;
+	transition: background 0.6s;
+	-webkit-transition: background 0.6s;
+	-moz-transition: background 0.6s;
+}
+
+
+#container {
+	max-width: 600px;
+	margin: 0 auto;
+	margin-top:20px;
+	z-index: 2s;
+}
+
+#uitleg{
+	display: inline-block;
+	width: 7%;
+	font-family: 'Rubik', sans-serif;
+	font-weight: bold;
+	float: right;
+
+}
+
+h1{
+	font-family: 'Quicksand', sans-serif;
+	font-weight: 700;
+	margin: 0;
+	font-size: 4.0em;
+	line-height: 1;
+	
+}
+h2{
+	font-family: 'Quicksand', sans-serif;
+	font-weight: 400;
+	margin: 0;
+	font-size: 2.5em;
+
+}
+
+#uitlegkader{
+	float: center;
+	z-index: 5;
+	background-color: rgba(255, 255, 255, 0.9);
+	margin: 100px 30%;
+	width: 40%;
+	padding: 20px;
+	position:absolute;
+	border-radius: 30px;
+	text-align: center;
+	font-family: 'Rubik', sans-serif;
+}
+
+#titel {
+	color: white;
+	text-align: center;
+	background-color: steelblue;
+	margin: 0;
+	padding: 2% 0;
+	text-transform: uppercase;
+}
+
+
+#onderbalk{
+	background-color: white;
+	text-align: center;
+	height: 30px;
+	font-family: 'Rubik', sans-serif;
+	text-transform: uppercase;
+}
+
+#score{
+	display: inline-block;
+	width: 20%;
+	font-family: 'Rubik', sans-serif;
+	font-weight: bold;
+
+}
+
+#hoogstescore{
+	display: inline-block;
+	width: 10%;
+	font-family: 'Rubik', sans-serif;
+	font-weight: bold;
+	float: left;
+	height: 100%;
+	font-size: inherit;
+	padding-top: 5px;
+	padding-left: 10px;
+	margin-right: -40px;
+}
+
+.geselecteerd{
+	background: steelblue;
+}
+
+button{
+	font-family: 'Rubik', sans-serif;
+	border: none;
+	background: none;
+	text-transform: uppercase;
+	height: 100%;
+	font-size: inherit;
+	letter-spacing: 2px;
+	font-weight: bold;
+	transition: all 0.4s;
+	outline: none;
+}
+
+button:hover {
+	background: steelblue;
+	color: white;
+}

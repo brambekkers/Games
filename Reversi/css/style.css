@@ -1,0 +1,104 @@
+#spel{
+    margin-top: 5vh;
+}
+
+#bg {
+  position: fixed; 
+  top: 0; 
+  left: 0; 
+  /* Preserve aspet ratio */
+  min-height: 100%;
+
+}
+
+#bord{
+    background-image: url("../img/bord.jpg");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    margin: auto;
+    height: 80vh;
+    max-width: 80vh !important;
+
+    border-radius: 1vh;
+    border: 0.3vh solid rgba(53, 24, 5, 0.6);
+    box-shadow: 0.2vh 0.2vh 0.2vh rgba(0, 0, 0, .5) ;
+}
+
+.bordVak{
+    padding: 5px;
+    width: 10%;
+    height: 10%;
+}
+
+.drop{
+    margin: 15%;
+    width: 70%;
+    height: 70%;
+}
+.dropHover{
+    margin: 15%;
+    width: 70%;
+    height: 70%;
+
+    transition: 0.2s ease;
+}
+.dropHover:hover{
+    margin: 10%;
+    width: 80%;
+    height: 80%;
+}
+.dropGroot{
+    width: 100%;
+    height: 100%;
+}
+
+#score{
+    height: 15vh;
+    font-family: 'Permanent Marker', cursive;
+}
+
+#score-p1-drop{
+    height: 12vh;
+    width: 12vh;
+    background-image: url("../img/drop0.png");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#score-p2-drop{
+    height: 12vh;
+    width: 12vh;
+    background-image: url("../img/drop1.png");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.score-p{
+    text-shadow: 0.1vh 0.1vh rgba(0, 0, 0, .6);
+    
+    line-height: 12vh;
+    text-align: center;
+    font-size: 2vh;
+}
+
+#winnaarModal{
+    background-image: url("../img/sky_winnaar.jpg");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    width: 80vh;
+    height: 50vh;
+}

@@ -1,0 +1,89 @@
+body {
+    background:
+    linear-gradient(45deg, #92baac 45px, transparent 45px)64px 64px,
+    linear-gradient(45deg, #92baac 45px, transparent 45px,transparent 91px, #e1ebbd 91px, #e1ebbd 135px, transparent 135px),
+    linear-gradient(-45deg, #92baac 23px, transparent 23px, transparent 68px,#92baac 68px,#92baac 113px,transparent 113px,transparent 158px,#92baac 158px);
+    background-color:#e1ebbd;
+    background-size: 128px 128px;
+
+}
+
+h1{
+    font-size: 5vh
+}
+
+h4{
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 3vh
+}
+
+#tetrisDiv{
+    margin-top: 2%;
+    padding-left: 20%;
+}
+
+
+#tetris{
+    margin-left: auto;
+    margin-right: auto;
+    display: inline-block;
+    border: 3vh darkgray solid;
+}
+
+#score{
+    vertical-align:top;
+    display: inline-block;
+    font-size: 2em;
+    text-align: center;
+    width: 20%;
+    margin-left: 5%;
+    font-family: 'VT323', monospace;
+}
+#StatistiekDiv{
+    margin-top: 13vh;
+}
+
+#topScoreDiv{
+    margin-top: 15vh;
+}
+
+#huidigeNaam{
+    font-family: 'VT323', monospace;
+    font-size: 1em;
+    width: 100%;
+    text-align: center;
+    border: none;
+    background: rgba(255, 255, 255, 0.5);
+}
+
+#huidigeNaam:focus {
+    outline-width: 0;
+}
+
+.scoreVorm{
+    width: 100%;
+    background: white;
+    line-height: 5vh;
+    margin: 1vh auto;
+    vertical-align: middle;
+    border: 0.2vh black solid;
+}
+
+.streep{
+    border: 0.1vh black solid;
+    margin-bottom: 0;
+}
+
+#statistiekInfo{
+    text-align: left;
+    font-size: 0.9em;
+    background: white;
+    border: 0.2vh black solid;
+}
+
+.statistiekText{
+    width: 40%;
+    display: inline-block; 
+    line-height: 3vh;  
+}

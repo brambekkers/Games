@@ -1,0 +1,97 @@
+body{
+	font-family: 'Roboto', sans-serif;
+	background: #2980b9; /* fallback for old browsers */
+	background: -webkit-linear-gradient(to left, #e9defa , #fbfcdb); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to left, #e9defa , #fbfcdb); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */   
+	text-align: center;   
+}
+
+#titel{
+	
+	width: 30%;
+	margin: auto;
+	margin-top: 5%;
+	margin-bottom: 3%;
+	text-align: center;
+}
+
+#titel h1{
+	font-family: 'Pacifico', cursive;
+	font-size: 500%;
+}
+
+#titel h2{
+	font-size: 200%;
+}
+
+#hoogstescore{
+	font-size: 200%;
+}
+
+#nummer{
+	font-size: 2000%;
+
+}
+
+#score{
+	position: absolute;
+	z-index: 5;
+	margin-left: 70%;
+	margin-top: 5%;
+}
+
+#antwoord{
+	font-size: 300%;
+	margin-bottom: 60px;
+}
+
+#lijntje {
+	width: 50%;
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
+#buttons{
+	width: 80%;
+	margin: auto;
+	font-size: 300%;
+
+}
+
+.btn-circle {
+  width: 150px;
+  height: 150px;
+  text-align: center;
+  padding: 5px 0;
+  font-size: 20px;
+  margin-left: 5%;
+  margin-right: 5%;
+  line-height: 2.00;
+  border-radius: 1000px;
+}
+
+#uitleg{
+	font-family: 'Just Another Hand', cursive;
+	font-size: 200%;
+}
+#uitleg span{
+	font-family: 'Just Another Hand', cursive;
+	margin: 50px;
+}
+#extrauitleg{
+	font-size: 150%;
+	margin-top: 30px;
+}
+
+#pijlen img{
+	margin-top: 5px;
+	margin-left: 80px;
+	margin-right: 80px;
+ 	width: 5%;
+
+.btn:focus,.btn:active {
+   outline: none !important;
+}
+
+button:focus {outline:0;}

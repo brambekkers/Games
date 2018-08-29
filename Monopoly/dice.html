@@ -1,0 +1,50 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="keywords" content="DnD, dangeon and dragons, roleplay, dice, roller, 3D, RPG, wargame"/>
+<meta name="description" content="Online 3D dice roller"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>teal 3d dice roller</title>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<style type="text/css">@import "dice/main.css";</style>
+<style type="text/css">@import "dice/dice.css";</style>
+
+</head>
+
+<body style="margin: 0">
+    <div>
+        <div class="control_panel">
+            <p id="loading_text">Loading libraries, please wait a bit...</p>
+        </div>
+        <div id="info_div" >
+            <div class="center_field">
+                <span id="label"></span>
+            </div>
+            <div class="center_field" id="center-field">
+                 <button id="clear" style="display: none">clear</button>
+                <button class="btn btn-success knoppenGroen" id="throw">Gooien</button>   
+            </div>
+        </div>
+        <div id="selector_div" style="display: none">
+            <div class="center_field">
+                <input type="text" id="set" value="2d6" style="display: none"></input><br/>
+            </div>
+        </div>
+         <div id="canvas"></div>
+    </div>
+    <script src="dice/libs/three.min.js"></script>
+    <script src="dice/libs/cannon.min.js"></script>
+    <!--script type="text/javascript" src="https://drive.google.com/uc?id=0ByGeV2TiysmOelhLSnlUQ3ZMc2M"></script>
+    <script type="text/javascript" src="https://drive.google.com/uc?id=0ByGeV2TiysmOczhfWW90OEV0dmM"></script-->
+
+
+    <script type="text/javascript" src="dice/teal.js"></script>
+    <script type="text/javascript" src="dice/dice.js"></script>
+    <script type="text/javascript" src="dice/main.js"></script>
+    <script type="text/javascript" defer="defer">
+        dice_initialize(document.body);
+    </script>
+</body>
+</html>

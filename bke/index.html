@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Boter kaas en eiren</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+
+    <div class="container">
+
+        <!-- Login -->
+        <div id="login" class="alert alert-primary" role="alert">
+            <form id="data">
+                <input type="text" id="naam" placeholder="Naam" required>
+                <button type="submit" id="loginButton" class="btn btn-secondary btn-lg">Spelen</button>
+            </form>
+            
+        </div>
+        <!-- GameList -->
+        <div id="gameList">
+            <div class="row">
+                <div class="col-4">
+                    <button type="submit" id="newGameButton" class="btn btn-success">New Game</button>
+                </div>
+                <div class="col-4"></div>
+                <div class="col-4">
+                    <button type="submit" class="btn btn-danger LogoutButton">Uitloggen</button>
+                </div>
+            </div>
+            <table class="table table-hover table-bordered">
+                <thead class="table-active">
+                    <tr>
+                        <th scope="col" class="w-25">#</th>
+                        <th scope="col">Naam spel</th>
+                        <th scope="col" class="w-25">Deelnemers</th>
+                    </tr>
+                </thead>
+                <tbody id="gameListBody">
+                    
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Spelbord -->
+        <div id="actiefBord">
+            <div class="row">
+                <div class="col-4">
+                    <button type="submit" id="terugButton" class="btn btn-secondary">Terug</button>
+                </div>
+                <div class="col-4"></div>
+                <div class="col-4">
+                    <button type="submit" class="btn btn-danger LogoutButton">Uitloggen</button>
+                </div>
+            </div>
+            <div id="spelbord" class="row">
+                <div id="cell-0" class="col-4 cellen"></div> 
+                <div id="cell-1" class="col-4 cellen"></div>
+                <div id="cell-2" class="col-4 cellen"></div>
+                <div id="cell-3" class="col-4 cellen"></div>
+                <div id="cell-4" class="col-4 cellen"></div>
+                <div id="cell-5" class="col-4 cellen"></div>
+                <div id="cell-6" class="col-4 cellen"></div>
+                <div id="cell-7" class="col-4 cellen"></div>
+                <div id="cell-8" class="col-4 cellen"></div>
+            </div>
+
+            <div id="score" class="row">
+                <div id="wie" class="col-4 scoreText">Wie is aan zet:
+                    <p id="wieAanZet"></p>
+                </div>
+                <div id="rbutton" class="col-4"><button type="submit" id="resetButton" class="btn btn-secondary btn-lg">Reset</button></div> 
+                <div id="spelers" class="col-4 scoreText">Spelers:
+                    <ul>
+                        <li id="speler0">test</li>
+                        <li id="speler1">test</li>
+                    </ul>
+                </div> 
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
+  crossorigin="anonymous"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
+    <script src="firebase_data.js"></script>
+    <script src="firebase_user.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

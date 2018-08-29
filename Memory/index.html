@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Memory</title>
+</head>
+
+<!-- CSS -->
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<!-- boodstrap -->
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<!-- FONT -->
+<link href="https://fonts.googleapis.com/css?family=Hind:300|Indie+Flower" rel="stylesheet">
+<body>
+
+
+
+
+
+
+<!-- TITEL -->
+<div id="titel">
+	<h2 id="lijn1">---------------------<h2>
+	<h1>MEMORY</h1>
+	<p>The Game</p>
+	<h2 id="lijn2">---------------------<h2>
+</div>
+<!-- EINDE TITEL -->
+
+
+
+<!-- GEGEVENS -->
+<div class="main_gegevens" style="display:none">
+  <div class="pagenations">
+    <div class="pagenation page-01 is-active"></div>
+    <div class="pagenation page-02"></div>
+    <div class="pagenation page-03"></div>
+    <div class="pagenation page-04"></div>    
+  </div>
+  <div class="blocks">
+    <div class="block block-01 is-active">
+      <form>
+      	<h3>Wie speelt er?</h3>
+        <b>Eerste naam:</b><br>
+        <input type="text" name="firstname" id="inputspeler1" value="Speler 1"><br> 
+        <b>Tweede naam:</b><br>
+        <input type="text" name="lastname" id="inputspeler2" value="Speler 2">
+      </form>
+      <div class="button page-02" id="namen">Verder</div>
+
+    </div>
+    <div class="block block-02">
+      <form>
+      	<h3>Welk type kaarten?</h3>
+      	<div id="keuzes">
+	        <div class="spelbutton spelbutton-01" id="kaarttype1">Honden</div>
+	      	<div class="spelbutton spelbutton-02" id="kaarttype2">Katten</div>
+	      	<div class="spelbutton spelbutton-03" id="kaarttype3">Babys</div>
+	      	<div class="spelbutton spelbutton-04" id="kaarttype4">Racefietsen</div>
+      	</div>
+      </form>
+      <div class="button page-03">Verder</div>
+    </div>
+    <div class="block block-03">
+      <form>
+      	<h3>Hoeveel kaarten??</h3>
+      	<input id="spelschuif" type="range" min="12" max="48" step="12" value="48" onchange="updateTextInput(this.value);">
+        <input id="textInput" value="" placeholder="48 kaarten" disabled>
+        </form>
+        <div class="button page-04" id="kaarten">Verder</div>
+    </div>
+    <div class="block block-04">
+      <h3>Laten we beginnen!!</h3>
+    </div>    
+</div>
+</div>
+<!-- EINDE GEGEVENS -->
+
+
+
+<!-- BEGIN SPEL -->
+
+<div class="container-fluid" style="display:none">
+	<div class="row">
+		<div id="memory_board" class="col-sm-12 col-md-9">    </div> <br><br>
+
+		<div id="knoppen" class="col-sm-12 col-md-2">
+				<button id="nieuw_spel" class="btn btn-block btn-success btn-lg">Nieuw spel</button>
+				<button id="nieuwe_instellingen" class="btn btn-block btn-success btn-lg">Nieuwe instellingen</button>
+
+				<p id="score">
+				<span><u><b>Wie is aan zet:</b></u></span><br>
+				<span id="wieisaandebeurt" class="center"></span><br><br><br>
+				<span><b><u>Score: </u></b></span><br>
+				<span id="naam1">Score speler 1: </span><span id="score1" class="score">0</span><br>
+				<span id="naam2">Score speler 2: </span><span id="score2" class="score">0</span>
+				</p>
+		</div>
+	</div>
+</div>
+
+<!-- EINDE SPEL -->
+
+
+
+
+
+
+
+
+
+
+
+
+<script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+<script type="text/javascript" src="js/function.js"></script>
+<script type="text/javascript" src="js/slider.js"></script>
+</body>
+</html>

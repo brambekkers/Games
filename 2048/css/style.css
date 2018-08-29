@@ -1,0 +1,87 @@
+
+
+@font-face {
+    font-family: "Exo";
+    font-weight: 400;
+    src:url("/fonts/Exo2-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Exo";
+    font-weight: 800;
+    src:url("/fonts/Exo2-Bold.ttf");
+}
+
+html{
+    overflow-x: hidden; 
+    overflow-y: hidden;
+}
+
+body{
+     font-family: "Exo";
+     background: #FFFDC0;
+     margin: 0px;
+}
+
+.spel{
+    display: block;
+    position: relative;
+    top: 0px;
+    /* background: #c8c8c8; */
+    display: block;
+    min-width: 820px;
+    margin-left: calc((100vw - 860px) / 2);
+    margin-right: calc((100vw - 860px) / 2);
+}
+
+.bold{
+    font-weight: 800;
+}
+
+#titel{
+    display: block;
+    position: relative;
+    font-size: 80px;
+    left: 40px;
+    top: 60px;
+}
+
+#subtitel{
+    display: block;
+    position: relative;
+    font-size: 20px;
+    left: 40px;
+    top: -190px;
+}
+
+.score{
+    display: block;
+    position: relative;
+    font-size: 25px;
+    top: -100px;
+    left: 590px;
+    width: 200px;
+    height: 130px;
+    background: #c8c8c8;
+    padding:25px;
+}
+
+#scoreText{
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-weight: 400;
+    font-size: 1.2em;
+}
+
+.score h3{
+    margin-top: 0px;
+}
+
+canvas{
+    display: block;
+    position: relative;
+    top: -140px;
+    width: 100%;
+    margin: auto;
+}

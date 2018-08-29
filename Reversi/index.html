@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Reversi</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+</head>
+<body>
+
+    <img src="img/sky.jpg" id="bg" class="img-fluid">
+    <div id="spel" class="container">
+        <div class="row">
+            <div id="bord" class="col-12 p-0">
+                <template v-for="(rij, nummerRij) in bord">
+                    <div v-if="rij" v-for="(vakje, nummerKolom) in rij" class="d-inline-block bordVak" @click="gekliktVakje(nummerRij, nummerKolom)">
+                        <!-- player 0 -->
+                        <img v-if="vakje.eigenaar === 0 && !vakje.geklikt && vakje.eigenaar != beurt" src="img/drop0.png" class="drop">
+                        <img v-if="vakje.eigenaar === 0 && !vakje.geklikt && vakje.eigenaar === beurt" src="img/drop0.png" class="dropHover">
+                        <img v-if="vakje.eigenaar === 0 && vakje.geklikt" src="img/drop0.png" class="dropGroot">
+                       
+                        <!-- player 1 -->
+                        <img v-if="vakje.eigenaar === 1 && !vakje.geklikt && vakje.eigenaar != beurt" src="img/drop1.png" class="drop">
+                        <img v-if="vakje.eigenaar === 1 && !vakje.geklikt && vakje.eigenaar === beurt" src="img/drop1.png" class="dropHover">
+                        <img v-if="vakje.eigenaar === 1 && vakje.geklikt" src="img/drop1.png" class="dropGroot">
+
+                        <!-- leeg vakje -->
+                        <img v-if="vakje.eigenaar === null" src="img/dropnull.png" class="drop">
+                    </div>
+                </template>
+            </div>
+        </div>
+        <div class="row">
+            <div id="score" class="col-12">
+                <div class="d-flex h-100 justify-content-center">
+
+                    <div v-if="beurtP0" id="score-p1-drop" class="mr-5 my-auto animated infinite tada"> 
+                        <p class="score-p">{{scoreP0}}</p> 
+                    </div>
+                    <div v-if="!beurtP0" id="score-p1-drop" class="mr-5 my-auto"> 
+                        <p class="score-p">{{scoreP0}}</p> 
+                    </div> 
+                    <h1 class="d-inline my-auto">Score</h1> 
+                    <div v-if="beurtP1" id="score-p2-drop" class="ml-5 my-auto animated infinite bounce"> 
+                        <p class="score-p">{{scoreP1}}</p> 
+                    </div>
+                    <div v-if="!beurtP1" id="score-p2-drop" class="ml-5 my-auto"> 
+                        <p class="score-p">{{scoreP1}}</p> 
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade winaarModal" tabindex="-1" role="dialog" aria-labelledby="winaarModal" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div id="winnaarModal" class="modal-content">
+                    
+                </div>
+            </div>
+          </div>
+          
+    </div>
+    
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    <script src="game.js"></script>
+</body>
+</html>

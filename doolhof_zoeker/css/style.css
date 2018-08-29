@@ -1,0 +1,79 @@
+
+body{
+    background: #333333;
+    padding: 5vh;
+}
+
+#spel{
+    width: 90vh;
+    margin: auto;
+}
+
+#canvas{
+    width: 60vh;
+    height: 60vh;
+    margin: auto;
+}
+
+#titel{
+    text-align: center;
+    font-size: 4vh;
+    font-family: 'Anton', sans-serif;
+    color: white;
+    letter-spacing: 0.4em;
+}
+
+#titel h1{
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+#score{
+    font-family: 'Quicksand', sans-serif;
+    
+}
+#knoppen{
+    text-align: center;
+}
+
+.knop{
+	background-color:#ffffff;
+	border:2px solid #dcdcdc;
+	display:inline-block;
+	cursor:pointer;
+    color:#666666;
+    font-family: 'Quicksand', sans-serif;
+	font-size: 1.5em;
+	font-weight:bold;
+	padding:11px 23px;
+	text-decoration:none;
+    text-shadow:0px -1px 0px #ffffff;
+    margin: 10px;
+    letter-spacing: 0.1em;
+}
+
+.knop:hover{
+    background-color:#dcdcdc;
+}
+
+hr{
+    width: 60vh;
+    color: white;
+    border: white solid 0.25vh;
+}
+
+#scorelvl{
+    text-align: center;
+    color: white;
+    font-size: 1.3em;
+}
+
+#scorelvl p{
+    display: inline;
+    padding: 0 5vh;
+}
+
+#scorelvl p span{
+    font-weight: 800;
+    font-size: 1.5em;
+}

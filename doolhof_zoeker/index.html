@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Escape the maze</title>
+
+
+    <!-- Import CSS -->
+        <link rel="stylesheet" href="css/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Anton|Quicksand" rel="stylesheet">
+    <!-- Eind CSS -->
+</head>
+<body>
+
+
+    <div id="spel">
+        <div id="titel">
+            <h1>ESCAPE THE MAZE</h1>
+        </div>
+        <div id="canvas">
+
+        </div>
+        <div id="score">
+            <div id="scorelvl">
+                <p>Huidige lvl:    <span id="hlvl">1</span> </p>
+                <p>Hoogste lvl:    <span id="tlvl">2</span> </p>
+            </div>
+            <hr>
+            <div id="knoppen">
+                    <button class="knop" onclick="resetSpel()">Restart lvl</button>
+                    <button class="knop" onclick="nieuwSpel()">New Game</button>
+            </div>
+        </div>
+    </div>
+    
+    
+
+    <!-- Import Javascript -->
+    <script src="js/p5.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/cell.js"></script>
+    <script src="js/point.js"></script>
+
+
+    <!-- Eind Javascript -->
+
+</body>
+</html>

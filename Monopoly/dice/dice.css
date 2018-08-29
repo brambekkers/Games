@@ -1,0 +1,116 @@
+
+
+.center_field {
+    position: absolute;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    background-color:none;
+}
+
+.center_field * {
+    position: relative;
+    font-family: Arial;
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 5px 15px;
+}
+
+.center_field br {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.bottom_field {
+    position: absolute;
+    text-align: center;
+    bottom: 5px;
+    width: inherit;
+    padding: 0px;
+}
+
+#label {
+    font-size: 32pt;
+    word-spacing: 0.5em;
+    padding: 5px 15px;
+    color: rgba(21, 26, 26, 0.6);
+    top: 45%;
+}
+
+#labelhelp {
+    font-size: 12pt;
+    padding: 5px 15px;
+    color: rgba(21, 26, 26, 0.5);
+    bottom: 50px;
+}
+
+#set {
+    text-align: center;
+    font-size: 26pt;
+    border: none;
+    color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(255, 255, 255, 0);
+    top: 60%;
+}
+
+#sethelp {
+    font-size: 12pt;
+    color: rgba(21, 26, 26, 0.5);
+    background: none;
+    top: 25%;
+}
+
+#center-field button {
+    /* font-size: 30pt; */
+    /* color: rgb(255, 255, 255);
+    background-color: rgba(21, 26, 26, 0.5); */
+    cursor: pointer;
+    border: none;
+    /* width: 5em; */
+    top:30%;
+    width: 60%;
+	margin: 5px auto;
+	padding: 0.6em 0;
+  	font-size: 16px;
+  	font-weight: 600;
+      text-align: center;
+      display: inline-block;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+      touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  color: #fff;
+  background-color: #5cb85c;
+  border-color: #4cae4c;
+  outline: none;
+  
+  
+  transition:all .08s linear;
+    position:relative;
+    outline:medium none;
+    -moz-outline-style:none;
+    border:0px;
+    margin-right:10px;
+    margin-top:15px;
+  box-shadow:0 0 0 1px #5cb85c inset, 0 0 0 2px rgba(255,255,255,0.15) inset, 0 8px 0 0 #4cae4c, 0 8px 0 1px rgba(0,0,0,0.4), 0 8px 8px 1px rgba(0,0,0,0.5);
+
+}
+
+#center-field button:focus{
+    outline:medium none;
+    -moz-outline-style:none;
+}
+
+#center-field button:active {
+    top:34%;
+}
+.dice_place {
+    position: absolute;
+    border: solid black 1px;
+}

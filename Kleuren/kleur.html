@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Kleuren raden</title>
+	<link rel="stylesheet" type="text/css" href="kleur.css">
+	<link href="https://fonts.googleapis.com/css?family=Quicksand:400,700|Rubik" rel="stylesheet">
+</head>
+<body>
+
+<div id="uitlegkader">
+	<h2>Uitleg RGB-kleuren-spel</h2><br><br>
+	<img src="afbeeldingen/kleuren.png" width="60%"><br><br>
+	<p>Een manier om een RGB-kleur te definiëren is door de intensiteit van elk van de basiskleuren rood, groen en blauw in een getal uit te drukken. De waarde van de kleur heeft hierbij de volgende vorm:<br><br>
+	<strong>rgb ( rood , groen , blauw )</strong><br><br>
+	Elke basiskleur heeft een waarde tussen 0 en 255. Bij 0 ontbreekt een kleur, bij 255 is de intensiteit maximaal. Als voorbeeld hier een aantal kleuren:</p>
+
+	<strong>rgb(255,0,0) </strong>=         rood<br>
+	<strong>rgb(255,255,255) </strong>=  wit<br>
+	<strong>rgb(0,0,0) </strong>=       zwart<br>
+	<strong>rgb(32,178,154) </strong>=   een zeegroene kleur<br>
+
+</div>
+
+
+<div id="titel">
+	<h2>Het grote</h2>
+	<h1 id="titelkleur"></h1>
+	<h2>raad spel</h2>
+</div>
+
+<div id="onderbalk">
+	<span id="hoogstescore">Hoogste score: 0</span> 
+	<button id="nieuw">Nieuwe kleuren</button> 
+	<span id="score"></span> 
+	<button id="makkelijk">Makkelijk </button>
+	<button class="geselecteerd" id="moeilijk">Moeilijk</button>
+	<button id="uitleg">Uitleg</button>
+</div>
+
+<div id="container">
+	<div class="square"></div>
+	<div class="square"></div>
+	<div class="square"></div>
+	<div class="square"></div>
+	<div class="square"></div>
+	<div class="square"></div>
+</div>
+
+
+
+
+
+<script type="text/javascript" src="kleur.js"></script>
+
+</body>
+</html>

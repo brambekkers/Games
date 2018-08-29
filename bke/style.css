@@ -1,0 +1,104 @@
+#actiefBord{
+    width: 60vh;
+    margin: 10vh auto;
+}
+
+#newGameButton{
+    width: 100%;
+    margin-bottom: 1vh;
+}
+
+#terugButton{
+    width: 100%;
+    margin-bottom: 1vh;
+}
+
+.LogoutButton{
+    width: 100%;
+    margin-bottom: 1vh;
+}
+
+#gameList{
+    width: 60vh;
+    margin: 10vh auto;
+    text-align: center;
+}
+
+#gameList table{
+    border: solid black 0.4vh !important;
+}
+
+#gameList table thead{
+    background-color: #5a6268;
+    color: white;
+}
+
+#spelbord{
+    border: solid black 0.4vh;
+    width: 60vh;
+    height: 60vh;
+    margin: auto;
+    text-align: center;
+}
+
+#spelbord div{
+    padding-top: 5vh;
+    border: solid black 0.2vh;
+    font-size: 6vh;
+    width: 19.8vh;
+    height: 19.8vh;
+}
+
+#login{
+    width: 60vh;
+    height: 30vh;
+    margin: auto;
+    margin-top: 10vh;
+    text-align: center;
+    border: solid black 0.4vh;
+}
+
+#naam{
+    display: block;
+    margin: auto;
+    margin-top: 9vh;
+    width: 20vh;
+    height: 4vh;
+    text-align: center;
+    font-size: 3vh;
+    border: solid black 0.2vh;
+}
+
+#login button{
+    display: block;
+    margin: auto;
+    margin-top: 1vh;
+    width: 20vh;
+    height: 8vh;
+    font-size: 3vh;
+    border: solid black 0.2vh;
+}
+
+#score{
+    padding: 3vh;
+    height: 15vh;
+    margin: auto;
+    text-align: center;
+}
+
+#score .scoreText{
+    font-size: 2vh;
+}
+
+#score button{
+    display: block;
+    margin: auto;
+    width: 16vh;
+    height: 8vh;
+    font-size: 3vh;
+    border: solid black 0.2vh;
+}
+
+#rbutton{
+    margin: auto;
+}
